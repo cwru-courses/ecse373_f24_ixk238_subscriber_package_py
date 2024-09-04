@@ -15,6 +15,7 @@ def listener():
     rospy.init_node('subscriber_node', anonymous=True)
 
     rospy.Subscriber("publisher_topic", String, callback)
+    
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
